@@ -1,19 +1,19 @@
-// calculator.js
+
 function stringCalculator(numbers) {
-    if (numbers === "") return 0;  // Step 1
+    if (numbers === "") return 0;  
   
-    const numArray = numbers.split(",");  // Step 2
+    const numArray = numbers.split(",");  
     const sum = numArray.reduce((total, num) => total + parseInt(num), 0); // Step 3
     return sum;
   }
   
   module.exports = stringCalculator;
 
-  //new
+
   function stringCalculato(numbers) {
     if (numbers === "") return 0;
   
-    const numArray = numbers.split(/,|\n/);  // Regex to handle both comma and newline
+    const numArray = numbers.split(/,|\n/);  
     const sum = numArray.reduce((total, num) => total + parseInt(num), 0);
     return sum;
   }
